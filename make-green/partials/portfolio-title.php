@@ -3,8 +3,8 @@
  * @package gw214
  */
 
-$title_key    = 'layout-' . ttfmake_get_view() . '-hide-title';
-$title_option = (bool) get_theme_mod( $title_key, ttfmake_get_default( $title_key ) );
+$title_key    = 'layout-' . make_get_current_view() . '-hide-title';
+$title_option = (bool) get_theme_mod( $title_key, make_get_thememod_default( $title_key ) );
 ?>
 
 <?php if ( get_the_title() && ( ! is_page() || ! $title_option ) ) : ?>

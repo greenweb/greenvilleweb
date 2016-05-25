@@ -3,12 +3,12 @@
  * @package Make
  */
 
-$taxonomy_view   = ttfmake_get_view();
+$taxonomy_view   = make_get_current_view();
 
 $category_key    = 'layout-' . $taxonomy_view . '-show-categories';
 $tag_key         = 'layout-' . $taxonomy_view . '-show-tags';
-$category_option = true; #(bool) get_theme_mod( $category_key, ttfmake_get_default( $category_key ) );
-$tag_option      = true; #(bool) get_theme_mod( $tag_key, ttfmake_get_default( $tag_key ) );
+$category_option = true; #(bool) get_theme_mod( $category_key, make_get_thememod_default( $category_key ) );
+$tag_option      = true; #(bool) get_theme_mod( $tag_key, make_get_thememod_default( $tag_key ) );
 ?>
 
 <?php
