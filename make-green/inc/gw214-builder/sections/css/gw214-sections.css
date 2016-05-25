@@ -1,0 +1,151 @@
+/*---------------------------------------------------------
+ Hero (sections.css)
+-------------------------------------------------------- */
+.ttfmake-hero-block {
+	position: relative;
+	margin-bottom: 20px;
+}
+.ttfmake-hero-block-body {
+	padding: 12px;
+}
+.ttfmake-hero-blocks .ttfmake-hero-block-header h3 {
+	background-color: #ffffff;
+}
+.ttfmake-hero-options {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+.ttfmake-hero-options-container {
+	float: left;
+	margin-right: 50px;
+}
+.ttfmake-hero-options-title {
+	margin-top: 8px;
+}
+
+.ttfmake-hero-add-item {
+	clear: both;
+	height: 76px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+}
+.ttfmake-hero-add-item:before {
+	content: "\f502";
+	display: block;
+	color: #1bc865;
+	font: 36px/76px dashicons;
+	text-align: center;
+}
+.ttfmake-hero-add-item-link {
+	text-decoration: none; /*reset*/
+}
+.ttfmake-hero-add-item span {
+	display: none; /*reset*/
+	text-indent: -9999px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/*---------------------------------------------------------
+ Banner: Slide (sections.css)
+-------------------------------------------------------- */
+@media screen and ( min-width: 1160px ) {
+	.ttfmake-hero-block-option-wrapper,
+	.ttfmake-hero-block-background-image-wrapper {
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.ttfmake-hero-block-option-wrapper {
+		float: right;
+		padding-left: 20px;
+	}
+	.ttfmake-hero-block-background-image-wrapper {
+		float: left;
+	}
+}
+.ttfmake-hero-block-header h3 em {
+	font-weight: normal; /*reset*/
+	color: #999999;
+}
+.ttfmake-add-block-wrapper {
+	margin-bottom: 20px;
+}
+.ttfmake-add-block-wrapper a:before {
+	content: "\f132";
+	position: relative;
+	top: 1px;
+	padding-right: 4px;
+	font-family: Dashicons;
+}
+@media screen and ( max-width: 782px ) {
+	.ttfmake-add-block-wrapper a:before {
+		top: 3px;
+	}
+}
+.ttfmake-hero-block .ttfmake-hero-block-body {
+	display: none;
+}
+.ttfmake-hero-block-open .ttfmake-hero-block-body {
+	display: block; /*reset*/
+}
+.ttfmake-stage .ttfmake-hero-blocks .sortable-placeholder {
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.edit-content-link.item-has-content.edit-hero-block-link:before {
+	content: "\f214";
+}
+.edit-hero-block-link,
+.remove-hero-block-link,
+.configure-hero-block-link {
+	display: inline-block;
+	position: absolute;
+	clear: both;
+	top: 20px;
+	right: 45px;
+	height: 39px;
+	margin-bottom: 0; /*reset*/
+	padding: 0 12px;
+	border: 1px solid #d9d9d9;
+	background-color: #eeeeee;
+	color: #aaaaaa;
+	text-decoration: none;  /*reset*/
+	outline: none !important;
+}
+.remove-hero-block-link {
+	right: 0; /*reset*/
+}
+.configure-hero-block-link{
+	right: 90px;
+}
+.edit-hero-block-link:hover,
+.remove-hero-block-link:hover,
+.configure-hero-block-link:hover {
+	color: #222222;
+}
+.edit-hero-block-link span,
+.remove-hero-block-link span,
+.configure-hero-block-link span {
+	display: none;
+	text-indent: -9999px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.edit-hero-block-link:before {
+	content: "\f464";
+	font: 400 20px/39px dashicons;
+	speak: none; /*reset*/
+}
+.remove-hero-block-link:before {
+	content: "\f182";
+	font: 400 20px/39px dashicons;
+	speak: none; /*reset*/
+}
+.configure-hero-block-link:before {
+	content: "\f111";
+	font: 400 20px/39px dashicons;
+	speak: none; /*reset*/
+}

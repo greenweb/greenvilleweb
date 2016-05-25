@@ -1,0 +1,159 @@
+// _preboot.scss
+// Variables and mixins
+
+// Variables
+// --------------------------------------------------
+
+//Descriptive colors
+$white:			#ffffff;
+$text:			darken(#51534a, 20%); /* #171717; */
+$link:	    #e96e4a; /* Orange */
+$secondary: #51534a; /* #7c786b;lighten($text, 50%); #eaecee; */
+$detail:    #b9bcbf; /* Grey */
+$black: 		#000000;
+//214  colors
+$cream:			#fff4c5;
+$green:			#8fcdc1;
+$tanish: 		#cdbc8f; /* green triad */
+$green_alt:	#d3e29b;
+$dark_alt:	#7c786b;
+
+
+//Functional colors
+$a:			$white;
+$b:			$text;
+$c:     $link; /* Orange */
+$d:     $secondary;
+$e:     $detail; /* Grey */
+$f:			$black;
+
+$z: 		$cream;
+$y: 		$green;
+$x: 		$green_alt;
+$w: 		$dark_alt;
+$v: 		$tanish;
+//Fonts
+$gw214-headings:  "myriad-pro","Gill Sans","Gill Sans MT","Calibri",sans-serif; 
+$gw214-text:			"minion-pro","Times","Times New Roman",serif; 
+
+
+
+$sans:        "Open Sans", Helvetica, Arial, sans-serif;
+$heading:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono: 				"Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;
+
+//Break points
+$one:				600px;
+$two:				800px;
+$three:			1100px;
+
+//Grid
+$width:			960px;
+$col:				92px;
+$gut:				32px;
+
+//Baseline
+$base: 				22px;
+
+//Element
+$indent:			1.5em;
+$rule: 				1px solid $b;
+
+// Mixins
+// --------------------------------------------------
+
+@mixin no-select {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	   	-ms-user-select: none;
+	   		user-select: none;
+}
+
+@mixin border-radius($radius: 3px) {
+			  border-radius: $radius;
+}
+
+@mixin for($media) {
+	@if $media == small-screens {
+		@media screen and (min-width: $one) { @content; }
+	}
+	@else if $media == medium-screens {
+		@media screen and (min-width: $two) { @content; }
+	}
+	@else if $media == large-screens {
+		@media screen and (min-width: $three) { @content; }
+	}
+}
+
+$baseline-px: 10px;
+
+@mixin rem($property, $px-values) {
+	// Convert the baseline into rems
+	$baseline-rem: $baseline-px / 1rem;
+	// Print the first line in pixel values
+	#{$property}: $px-values;
+	// If there is only one (numeric) value, return the property/value line for it.
+	@if type-of($px-values) == "number" {
+		#{$property}: $px-values / $baseline-rem; }
+	@else {
+		// Create an empty list that we can dump values into
+		$rem-values: unquote("");
+		@each $value in $px-values {
+			// If the value is zero, return 0
+			@if $value == 0 {
+				$rem-values: append($rem-values, $value); }
+			@else {
+				$rem-values: append($rem-values, $value / $baseline-rem); } }
+		// Return the property and its list of converted values
+		#{$property}: $rem-values; } }
+
+/*---------------------------------------------------------
+ Extends (_preboot.scss)
+-------------------------------------------------------- */
+.clear {
+	zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+.break {
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+
+/*---------------------------------------------------------
+ 214 Mixins (_preboot.scss)
+-------------------------------------------------------- */
+@mixin button($padding,$bg-color,$font-color,$font-size,$font-weight,$hover-color,$borderradius)
+{
+border:0px;
+margin:0px;
+display:inline-block;
+padding:$padding;
+background:$bg-color;
+color:$font-color;
+font-size:$font-size;
+font-weight:$font-weight;
+border-radius: $borderradius;
+text-decoration:none;
+cursor:pointer;
+&:before, &:after
+	{
+	content: "";
+     	display: table;
+    	}
+&:after
+	{
+	clear: both;
+	}
+&:hover
+	{
+	background:$hover-color;
+	}
+}

@@ -1,0 +1,260 @@
+.no-padding{
+  padding: 0;
+}
+figure.entry-thumbnail a:hover{ 
+  background-color: transparent;
+}
+footer#site-footer {
+  color: $z;
+}
+// main links
+article a, aside a, nav#menu-header-navigation a {
+  color: $c;
+  font-weight: normal;
+  text-decoration: none; //reset
+  @include rem('padding', 3px);
+  display: inline-block;
+  &:hover{
+    // background-color: $c;
+    color: darken($y, 10%);
+  }
+}
+/*---------------------------------------------------------
+ Header layout (_scaffolding.scss)
+-------------------------------------------------------- */
+.site-header-main{
+  position: relative;
+}
+.site-header-main .container {
+  position: relative;
+  z-index: 1;
+}
+.site-header-main .builder-banner-overlay,
+.site-header-main .builder-hero-overlay{
+  z-index: 0;
+}
+
+.header-social-links {
+  @include for(large-screens) {
+    float: none;
+    margin-bottom: 0; //reset
+  }
+}
+
+.search-form {
+  
+  @include for(medium-screens) {
+    float: right;
+  }
+  @include rem('font-size', 13px);
+  input {
+    @include for(medium-screens) {
+      width: auto;
+    }
+    width: 100%;
+  }
+}
+.search-submit {
+  display: none;
+}
+
+
+/*---------------------------------------------------------
+ Navigation customization
+-------------------------------------------------------- */
+.gw214-navigation ul{
+  list-style: none;
+}
+/*---------------------------------------------------------------
+ Home Page Title and tagline originated in (_scaffolding.scss)
+-------------------------------------------------------------- */
+
+.site-title {
+  color: $b;
+  margin: 0; //reset
+  font-weight: normal;
+  font-family: $heading;
+  text-shadow: -1px 1px 0 $a,
+         -2px 2px 0 $c,
+         -4px 4px 0 $b,
+         -5px 5px 0 $a;
+  @include rem('font-size', 50px);
+  @include for(medium-screens) {
+    @include rem('font-size', 80px);
+  }
+  @include for(large-screens) {
+    @include rem('font-size', 100px);
+  }
+  a {
+    color: $y;
+  }
+  .no-site-tagline & {
+    @include rem('margin-bottom', $base);
+  }
+}
+
+@include for(medium-screens) {
+  .site-branding {
+    float: left;
+    max-width: 50%;
+    .branding-right & {
+      float: right;
+    }
+  }
+}
+.site-description {
+  text-transform: uppercase;
+  @include rem('margin', $base/2 0 $base*4);
+  @include rem('font-size', 14px);
+  @include rem('letter-spacing', 2px);
+  @include rem('padding', 3px);
+  @include border-radius;
+  color: $a;
+  background-color: rgba($b,0.8);
+  display: inline-block;
+  text-shadow: 1px 1px 1px $y;
+  @include for(large-screens) {
+    @include rem('margin', $base/2 0 $base/2);
+    @include rem('font-size', 20px);
+    @include rem('letter-spacing', 2px);
+  }  
+}
+/*---------------------------------------------------------
+ Interior Title and tagline (_scaffolding.scss)
+-------------------------------------------------------- */
+.gw214-interior-page.full-width, .gw214-interior{
+  .site-header-main{
+    padding: 0;
+    .container{
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
+  }
+  .site-branding{ 
+    background-color: $f;
+    max-height: 100px;
+    @include for(large-screens) {
+      @include rem('margin-bottom', 20px);
+    }
+  }
+  .site-title {
+    text-shadow: none;
+    @include rem('font-size', 36px);
+    @include for(small-screens) {
+      @include rem('font-size', 50px);
+    }
+  }
+  .site-description {
+    text-shadow: none;
+    background-color:transparent;
+    @include rem('font-size', 8px); 
+  }
+
+}
+/*---------------------------------------------------------
+ Builder 
+-------------------------------------------------------- */
+
+/*---------------------------------------------------------
+ Builder Titles
+-------------------------------------------------------- */
+.home .builder-text-section-title{
+  @include rem('font-size', 50px);
+  color: $y;
+  text-shadow: -2px 2px 2px $f;
+  border-bottom: 4px solid $e;
+}
+/*---------------------------------------------------------
+ Builder Headings 
+-------------------------------------------------------- */
+.builder-text-title{
+  color: darken($e, 20% );
+  
+  font-family: $sans;
+  @include rem('font-size', 26px);
+}
+/*---------------------------------------------------------
+ Builder builder-text-content buttons 
+-------------------------------------------------------- */
+.builder-text-content{
+  p{
+    text-align: center;
+    @include for(medium-screens) {
+     text-align: left; 
+    }
+  }
+
+ a.gw-details{
+  background-color: $v;
+  color: $d;
+  border-color: $d;
+ }
+}
+  a.ttfmake-button {
+    margin-bottom: 4px;
+    color: $a;
+    @include for(medium-screens) {
+     margin-bottom: 0; 
+    }
+    background-color: $c;
+    border: 1px solid $c;
+    @include rem('font-size', 16px); 
+    &:hover {
+      background-color: $y;
+      color: $b;
+      border-color: $b;
+    }
+  }
+/*---------------------------------------------------------
+  
+-------------------------------------------------------- */
+
+header.entry-header {
+  
+  .entry-title{
+    color:$w;
+    display: inline-block;
+    @include rem('font-size', 14px);
+    margin-right: 10px;
+    @include for(medium-screens) {
+      @include rem('font-size', 40px);
+    } 
+    @include for(large-screens) {
+      @include rem('font-size', 50px);
+    }    
+  }
+  .gw-subtitle{
+    display: inline-block;
+    @include rem('font-size', 14px);
+    @include for(medium-screens) {
+      @include rem('font-size', 20px);
+    } 
+    @include for(large-screens) {
+      @include rem('font-size', 30px);
+    }    
+  }
+}
+/*---------------------------------------------------------
+  Portfolio
+-------------------------------------------------------- */
+.gw214-portfolio-entry-content{
+  @include rem('padding-bottom',44px);
+}
+.gw214-portfolio-link {
+  .ttfmake-button-icon{
+    color: $a;
+  }
+  a.ttfmake-button:hover {
+    color: $b;
+  }
+}
+/*---------------------------------------------------------
+ Fun (_gw214.scss)
+-------------------------------------------------------- */
+
+@keyframes vibrate {
+  50% { transform: rotate(1deg) translateX(1px); }
+  100% { transform: rotate(-1deg) translateX(-1px); }
+}

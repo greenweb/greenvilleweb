@@ -1,0 +1,70 @@
+/*!
+Theme Name: gw214
+Theme URI: http://www.greenvilleweb.us/wp/themes
+Author: Rew Rixom (Greenville Web)
+Author URI: http://www.greenvilleweb.us/
+Description: Child theme for Make by The Theme Foundry
+Template: make
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gw214
+Domain Path: /languages/
+License: &copy; 2014 Greenville Web, Some Rights Reserved by Rew Rixom (Greenville Web)
+License URI: license.txt
+Tags: make
+*/
+// @import url("../make/style.css");
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+  1.0 - Reset
+  2.0 - Typography
+  3.0 - Elements
+  4.0 - Forms
+  5.0 - Navigation
+    5.1 - Links
+    5.2 - Menus
+  6.0 - Accessibility
+  7.0 - Alignments
+  8.0 - Clearings
+  9.0 - Widgets
+  10.0 - Content
+    10.1 - Posts and pages
+    10.2 - Asides
+    10.3 - Comments
+  11.0 - Infinite scroll
+  12.0 - Media
+    12.1 - Captions
+    12.2 - Galleries 
+--------------------------------------------------------------*/
+// Use SASS to include CSS partials
+@import "bourbon";
+@import "header";
+@import "contents";
+@import "notes";
+@import "reset";
+@import "preboot";// colors, fonts etc...
+// Navigation
+@import 'smart-nav/variables'; // colors, fonts etc...
+@import 'smart-nav/mixins'; // custom mixins
+@import 'smart-nav/layout'; // responsive grid and media queries
+
+@import "scaffolding";
+@import "elements";
+@import "patterns";
+@import "posts";
+@import "pages";
+@import "sidebars";
+@import "widgets";
+@import "comments";
+@import "forms";
+@import "support";
+@import "gw214";
+@import "smart-nav";
+
+// custom hero block
+@import "_hero-block.scss";
+
+// EOF

@@ -1,0 +1,2 @@
+var oneApp=oneApp||{};!function(o,e,$,n,t){"use strict";t.HeroBlockModel=e.Model.extend({defaults:{id:"",parentID:"",sectionType:"heroblock"}}),t.HeroBlockModel.prototype.sync=function(){return null},t.HeroBlockModel.prototype.fetch=function(){return null},t.HeroBlockModel.prototype.save=function(){return null}}(window,Backbone,jQuery,_,oneApp);
+//# sourceMappingURL=./hero-block-min.js.map
