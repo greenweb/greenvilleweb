@@ -5,6 +5,7 @@
 
 // Header Options
 $subheader_class = ( make_get_thememod_value( 'header-show-social' ) || make_get_thememod_value( 'header-show-search' ) ) ? ' right-content' : '';
+$menu_label      = get_theme_mod( 'navigation-mobile-label', make_get_thememod_default( 'navigation-mobile-label' ) );
 $header_bar_menu = wp_nav_menu( array(
 	'theme_location'  => 'header-bar',
 	'container_class' => 'header-bar-menu',
