@@ -2,9 +2,7 @@
 /**
  * @package gw214
  */
-
-$thumb_key    = 'layout-' . make_get_current_view() . '-featured-images';
-$thumb_option = ttfmake_sanitize_choice( get_theme_mod( $thumb_key, make_get_thememod_default( $thumb_key ) ), $thumb_key );
+$thumb_option = make_get_thememod_value( 'layout-' . make_get_current_view() . '-featured-images' );
 
 // Header
 ob_start();

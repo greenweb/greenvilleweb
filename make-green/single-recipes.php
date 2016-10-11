@@ -23,8 +23,8 @@ global $post;
 		 * @param string     $type    The default template type to use.
 		 * @param WP_Post    $post    The post object for the current post.
 		 */
-		$template_type = apply_filters( 'make_template_content_single', 'recipe', $post );
-		get_template_part( 'partials/content', $template_type );
+
+		get_template_part( 'partials/content', 'recipe' );
 		?>
 		<?php get_template_part( 'partials/nav', 'post' ); ?>
 		<?php get_template_part( 'partials/content', 'comments' ); ?>
