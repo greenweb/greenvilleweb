@@ -56,7 +56,7 @@ function gw214_add_portfolio_views() {
 
 add_action( 'make_view_loaded', 'gw214_add_portfolio_views' );
 
-function gw214_is_portfolio( $view, $parent_post_type)
+function gw214_is_portfolio( )
 {
   return is_singular( 'portfolio' );
 }
