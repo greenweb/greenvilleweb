@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
 * @package gw214
 */
@@ -24,7 +24,7 @@ function theme_name_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
-add_filter( 'the_content', 'gw214_clear_floats_after_content' ); 
+add_filter( 'the_content', 'gw214_clear_floats_after_content' );
 
 function gw214_clear_floats_after_content( $content ) {
   $clean_this_shit_up = '<div class="clear">&nbsp;</div>';
@@ -42,24 +42,23 @@ function gw214_remove_make_nag( ) {
 }
 
 include 'inc/green-builder-class.php';
-// Templating functions 
-
-/**
-* 
-*/
-add_action( 'wp', 'gw214_get_post_type', 10 );
-function gw214_get_post_type()
-{
-  global $post;
-  if(!isset($post)) return;
-  if ( 'portfolio' == get_post_type($post->ID) ){
-    add_filter( 'make_get_view', 'gw214_overide_make_post_templates', 10, 2 );
-  }
+// Templating functions
+function gw214_add_portfolio_views() {
+  make_update_view_definition(
+    'portfolio',
+    array(
+      'label'    => __( 'Portfolio', 'gw214' ),
+      'callback' => 'gw214_is_portfolio',
+      'priority' => 20
+    )
+  );
 }
 
-function gw214_overide_make_post_templates( $view, $parent_post_type)
+add_action( 'make_view_loaded', 'gw214_add_portfolio_views' );
+
+function gw214_is_portfolio( $view, $parent_post_type)
 {
-  return 'porfiolio';
+  return is_singular( 'portfolio' );
 }
 
 /**
@@ -83,7 +82,7 @@ function gw214_the_sub_title($echo = true){
 function gw214_get_the_related_link( $echo = true, $link_type = 'button', $link_text = null ){
   $css_class = ''; $icon = ''; // delcaring these for later use
   if(is_null($link_text)) {
-    $link_text = __('Project link','gw214');  
+    $link_text = __('Project link','gw214');
   }
   $link = get_post_meta( get_the_ID(), '_gw_make_project_url', true);
   if (''==$link) {
