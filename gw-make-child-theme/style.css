@@ -20,4 +20,72 @@
  * Add your custom styles below.
  * This version of the Make child theme is only compatible with Make 1.6.0 and above.
  */
-.
+/*---------------------------------------------------------------
+ Home Page Title and tagline originated in make-green
+-------------------------------------------------------------- */
+.site-title {
+  color: #1c1d1a;
+  margin: 0;
+  font-weight: normal;
+  text-shadow: -1px 1px 0 #ffffff, -2px 2px 0 #e96e4a, -4px 4px 0 #1c1d1a, -5px 5px 0 #ffffff;
+  font-size: 50px;
+  font-size: 5rem; }
+  @media screen and (min-width: 800px) {
+    .site-title {
+      font-size: 80px;
+      font-size: 8rem; } }
+  @media screen and (min-width: 1100px) {
+    .site-title {
+      font-size: 100px;
+      font-size: 10rem; } }
+  .site-title a {
+    color: #8fcdc1; }
+  .no-site-tagline .site-title {
+    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
+  }
+
+
+
+@media screen and (min-width: 800px) {
+    .site-title {
+      font-size: 80px;
+      font-size: 8rem; } }
+  @media screen and (min-width: 1100px) {
+    .site-title {
+      font-size: 100px;
+      font-size: 10rem; } }
+  .site-title a {
+    color: #8fcdc1; }
+  .no-site-tagline .site-title {
+    margin-bottom: 22px;
+    margin-bottom: 2.2rem; }
+
+@media screen and (min-width: 800px) {
+  .site-branding {
+    float: left;
+    max-width: 50%; }
+    .branding-right .site-branding {
+      float: right; } }
+.site-description {
+  text-transform: uppercase;
+  margin: 11px 0 88px;
+  margin:  1.1rem 0 8.8rem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+  padding: 3px;
+  padding: 0.3rem;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: rgba(28, 29, 26, 0.8);
+  display: inline-block;}
+  @media screen and (min-width: 1100px) {
+    .site-description {
+      margin: 11px 0 11px;
+      margin:  1.1rem 0 1.1rem;
+      font-size: 20px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      letter-spacing: 0.2rem; } }
