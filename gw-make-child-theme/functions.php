@@ -32,7 +32,7 @@ function childtheme_update_choice_sets() {
 			1  => __( 'Traditional', 'gw-make-child' ),
 			2  => __( 'Centered', 'gw-make-child' ),
 			3  => __( 'Navigation Below (Primary)', 'gw-make-child' ),
-			4  => __( 'Header with Widgets', 'gw-make-child' )
+			4  => __( 'Greenville Web Header', 'gw-make-child' )
 		)
 	);
 }
