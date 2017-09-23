@@ -4,7 +4,7 @@
  * Author:      greenweb
  * Author URI:  http://www.greenvilleweb.com
  * Description: Create your website without touching a line of code. Make's flexible customization features and a powerful drag and drop page builder make designing your site fun and easy. Build almost anything: a simple portfolio or photography site, an ecommerce business site, a minimalist blog, or even a professional magazine. You'll start by customizing your background, layouts, fonts, colors, and logo. Next, add and organize your content using the drag and drop page builder. Add a photo, a video, a gallery, or even a slider to any page on your website. Make is responsive, so your website will naturally look great on phones, tablets, and desktop screens. It's also fully compatible with popular plugins like WooCommerce, Gravity Forms, Contact Form 7, Jetpack, and WP PageNavi.
- * Version:     1.1.0
+ * Version:     2.0
  * License:     GNU General Public License v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Template: make
@@ -89,3 +89,54 @@
       font-size: 2rem;
       letter-spacing: 2px;
       letter-spacing: 0.2rem; } }
+
+
+
+/*---------------------------------------------------------
+ Builder Titles
+-------------------------------------------------------- */
+.home .builder-text-section-title {
+  font-size: 50px;
+  font-size: 5rem;
+  color: #8fcdc1;
+  text-shadow: -2px 2px 2px #000000;}
+
+/*---------------------------------------------------------
+ Builder Headings
+-------------------------------------------------------- */
+.builder-text-title {
+  color: #84898e;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-size: 2.6rem; }
+
+/*---------------------------------------------------------
+ Builder builder-text-content buttons
+-------------------------------------------------------- */
+.builder-text-content p {
+  text-align: center; }
+  @media screen and (min-width: 800px) {
+    .builder-text-content p {
+      text-align: left; } }
+.builder-text-content a.gw-details {
+  background-color: #cdbc8f;
+  color: #51534a;
+  border-color: #51534a; }
+
+a.ttfmake-button {
+  margin-bottom: 4px;
+  color: #ffffff;
+  background-color: #e96e4a;
+  border: 1px solid #e96e4a;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media screen and (min-width: 800px) {
+    a.ttfmake-button {
+      margin-bottom: 0; } }
+  a.ttfmake-button:hover {
+    background-color: #8fcdc1;
+    color: #1c1d1a;
+    border-color: #1c1d1a; }
+
+
+

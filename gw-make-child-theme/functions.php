@@ -7,7 +7,7 @@
  *
  * The theme version.
  */
-define( 'TTFMAKE_CHILD_VERSION', '1.1.0' );
+define( 'TTFMAKE_CHILD_VERSION', '2.0' );
 
 /**
  * Turn off the parent theme styles.
