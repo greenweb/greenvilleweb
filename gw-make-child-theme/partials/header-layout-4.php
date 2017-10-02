@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Make
+ * @package GW-MAKE
  */
 
 // Header Options
@@ -71,7 +71,7 @@ set_query_var( 'header_bar_menu', $header_bar_menu );
 			</div>
 
       <!-- Navigation -->
-      <div id="cd-nav">
+      <div id="cd-nav" class="is-fixed">
         <a href="#0" class="cd-nav-trigger"><?php echo esc_html( $menu_label ); ?><span></span></a>
         <nav id="cd-main-nav" class="gw214-navigation" role="navigation">
           <a class="skip-link screen-reader-text" href="#site-content"><?php _e( 'Skip to content', 'make' ); ?></a>
