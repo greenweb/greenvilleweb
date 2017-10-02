@@ -20,6 +20,29 @@
  * Add your custom styles below.
  * This version of the Make child theme is only compatible with Make 1.6.0 and above.
  */
+
+/*---------------------------------------------------------
+ Header layout 4
+-------------------------------------------------------- */
+
+.header-layout-4 .site-branding,
+.header-layout-4 .site-navigation {
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.header-layout-4 a.custom-logo-link {
+  display: inline-block;
+}
+
+.header-layout-4 div.custom-logo {
+  display: inline-block;
+}
+
 /*---------------------------------------------------------------
  Home Page Title and tagline originated in make-green
 -------------------------------------------------------------- */
