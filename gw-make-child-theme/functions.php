@@ -23,8 +23,6 @@ define( 'TTFMAKE_CHILD_VERSION', '2.0' );
  * Add your custom theme functions here.
  */
 function childtheme_update_choice_sets() {
-
-
 	// Update an existing set
 	make_update_choice_set(
 		'header-layout',
@@ -36,9 +34,7 @@ function childtheme_update_choice_sets() {
 		)
 	);
 }
-
 add_action( 'make_choices_loaded', 'childtheme_update_choice_sets' );
-
 
 /**
  * Register our sidebars and widgetized areas.
