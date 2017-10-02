@@ -1,13 +1,13 @@
 <?php
 /**
- * @package Make Child
+ * @package GW Make
  */
 
 /**
  *
  * The theme version.
  */
-define( 'TTFMAKE_CHILD_VERSION', '2.0' );
+define( 'TTFMAKE_CHILD_VERSION', '1.1.0' );
 
 /**
  * Turn off the parent theme styles.
@@ -22,7 +22,7 @@ define( 'TTFMAKE_CHILD_VERSION', '2.0' );
 /**
  * Add your custom theme functions here.
  */
-function childtheme_update_choice_sets() {
+function gw_make_update_choice_sets() {
 	// Update an existing set
 	make_update_choice_set(
 		'header-layout',
@@ -34,7 +34,7 @@ function childtheme_update_choice_sets() {
 		)
 	);
 }
-add_action( 'make_choices_loaded', 'childtheme_update_choice_sets' );
+add_action( 'make_choices_loaded', 'gw_make_update_choice_sets' );
 
 /**
  * Register our sidebars and widgetized areas.
@@ -53,3 +53,9 @@ function header_widgets_init() {
 
 }
 add_action( 'widgets_init', 'header_widgets_init' );
+
+function gw_make_scripts() {
+  wp_enqueue_script( 'gw2017-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'gw_make_scripts' );
