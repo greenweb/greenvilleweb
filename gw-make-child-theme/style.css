@@ -148,7 +148,6 @@
  Builder Titles .home
 -------------------------------------------------------- */
 .builder-text-section-title {
-  font-family: "Lobster", Helvetica, Arial, sans-serif;
   font-size: 50px;
   font-size: 5rem;
   color: #8fcdc1;
@@ -415,7 +414,35 @@ article a, aside a, nav#menu-header-navigation a {
     color: #6cbdad; }
 
 
+/*---------------------------------------------------------
 
+-------------------------------------------------------- */
+header.entry-header .entry-title {
+  color: #7c786b;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-right: 10px; }
+  @media screen and (min-width: 800px) {
+    header.entry-header .entry-title {
+      font-size: 40px;
+      font-size: 4rem; } }
+  @media screen and (min-width: 1100px) {
+    header.entry-header .entry-title {
+      font-size: 50px;
+      font-size: 5rem; } }
+header.entry-header .gw-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 1.4rem; }
+  @media screen and (min-width: 800px) {
+    header.entry-header .gw-subtitle {
+      font-size: 20px;
+      font-size: 2rem; } }
+  @media screen and (min-width: 1100px) {
+    header.entry-header .gw-subtitle {
+      font-size: 30px;
+      font-size: 3rem; } }
 
 /*---------------------------------------------------------
   Portfolio
