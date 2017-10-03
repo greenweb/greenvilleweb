@@ -114,6 +114,35 @@
       letter-spacing: 0.2rem; } }
 
 
+/*---------------------------------------------------------
+ Interior Title and tagline (_scaffolding.scss)
+-------------------------------------------------------- */
+.gw2017-interior-page.full-width .site-header-main, .gw2017-interior .site-header-main {
+  padding: 0; }
+  .gw2017-interior-page.full-width .site-header-main .container, .gw2017-interior-page.full-width .site-header-main .infinite-footer-container, .gw2017-interior .site-header-main .container, .gw2017-interior .site-header-main .infinite-footer-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0; }
+.gw2017-interior-page.full-width .site-branding, .gw2017-interior .site-branding {
+  background-color: #000000;
+  max-height: 100px; }
+  @media screen and (min-width: 1100px) {
+    .gw2017-interior-page.full-width .site-branding, .gw2017-interior .site-branding {
+      margin-bottom: 20px;
+      margin-bottom: 2rem; } }
+.gw2017-interior-page.full-width .site-title, .gw2017-interior .site-title {
+  text-shadow: none;
+  font-size: 36px;
+  font-size: 3.6rem; }
+  @media screen and (min-width: 600px) {
+    .gw2017-interior-page.full-width .site-title, .gw2017-interior .site-title {
+      font-size: 50px;
+      font-size: 5rem; } }
+.gw2017-interior-page.full-width .site-description, .gw2017-interior .site-description {
+  text-shadow: none;
+  background-color: transparent;
+  font-size: 8px;
+  font-size: 0.8rem; }
 
 /*---------------------------------------------------------
  Builder Titles .home
@@ -391,17 +420,17 @@ article a, aside a, nav#menu-header-navigation a {
 /*---------------------------------------------------------
   Portfolio
 -------------------------------------------------------- */
-.gw214-portfolio-entry-content {
+.gw2017-portfolio-entry-content {
   padding-bottom: 44px;
   padding-bottom: 4.4rem; }
 
-.gw214-portfolio-link .ttfmake-button-icon {
+.gw2017-portfolio-link .ttfmake-button-icon {
   color: #ffffff; }
-.gw214-portfolio-link a.ttfmake-button:hover {
+.gw2017-portfolio-link a.ttfmake-button:hover {
   color: #1c1d1a; }
 
 /*---------------------------------------------------------
- Fun (_gw214.scss)
+ Fun (_gw2017.scss)
 -------------------------------------------------------- */
 @-webkit-keyframes vibrate {
   50% {
