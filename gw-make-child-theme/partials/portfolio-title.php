@@ -13,5 +13,5 @@ $title_option = (bool) get_theme_mod( $title_key, make_get_thememod_default( $ti
 		<?php the_title(); ?>
 	<?php if ( ! is_singular() ) : ?></a><?php endif; ?>
 </h1>
-<?php gw214_the_sub_title(); ?>
+<?php gw_the_sub_title(); ?>
 <?php endif; ?>
