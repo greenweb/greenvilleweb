@@ -58,3 +58,21 @@ function gw_make_scripts() {
   wp_enqueue_script( 'gw2017-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'gw_make_scripts' );
+
+/**
+ * Must be called from with in the loop
+ * @since 1.0
+ * @return string pulls out the subtitle from the posts_meta table
+ * @author rew rixom
+ *
+ */
+function gw_the_sub_title($echo = true){
+  $subtitle = get_post_meta( get_the_ID(), '_gw_make_subtitle', true);
+  if($subtitle != ''){
+    $return = "<h3 class='gw-subtitle'>{$subtitle}</h3>";
+  }
+  if ($echo) {
+    echo $return;
+  }
+  return $return;
+}
