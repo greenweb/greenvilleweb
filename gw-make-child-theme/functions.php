@@ -57,5 +57,4 @@ add_action( 'widgets_init', 'header_widgets_init' );
 function gw_make_scripts() {
   wp_enqueue_script( 'gw2017-global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0', true );
 }
-
 add_action( 'wp_enqueue_scripts', 'gw_make_scripts' );
